@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CoreTraining/CoreTraining.iml" filepath="$PROJECT_DIR$/CoreTraining/CoreTraining.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/JavaTraining.iml" filepath="$PROJECT_DIR$/.idea/JavaTraining.iml" />
+    </modules>
+  </component>
+</project>
