@@ -1,3 +1,5 @@
+import java.math.BigDecimal;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -138,8 +140,123 @@ public class Main {
         Main obj2 = new Main(30, 40);
         obj2.display();
 
+        // Practical 9: Create a practical to compare two variables of Wrapper class using Wrapper classes.
+
+         {
+            Integer num1 = 50;
+            Integer num2 = 30;
+
+            int result = num2.compareTo(num1);
+
+            if (result == 0) {
+                System.out.println("Both numbers are equal.");
+            } else if (result > 0) {
+                System.out.println("num1 is greater than num2.");
+            } else {
+                System.out.println("num1 is smaller than num2.");
+            }
+        }
+
+        // Practical 10: Create programs of all the string methods like charAt(), concat(), equals() etc.
+
+        {
+            String str1 = "Hello Java";
+            String str2 = "Hello World";
+            String str3 = "hello java";
+
+            // 1. charAt()
+            System.out.println("charAt(1): " + str1.charAt(1));
+
+            // 2. concat()
+            System.out.println("concat(): " + str1.concat(" Programming"));
+
+            // 3. equals()
+            System.out.println("equals(): " + str1.equals(str3));
+
+            // 4. equalsIgnoreCase()
+            System.out.println("equalsIgnoreCase(): " + str1.equalsIgnoreCase(str3));
+
+            // 5. length()
+            System.out.println("length(): " + str1.length());
+
+            // 6. toUpperCase()
+            System.out.println("toUpperCase(): " + str1.toUpperCase());
+
+            // 7. toLowerCase()
+            System.out.println("toLowerCase(): " + str1.toLowerCase());
+
+            // 8. substring()
+            System.out.println("substring(): " + str1.substring(6));
+
+            // 9. contains()
+            System.out.println("contains(): " + str1.contains("Java"));
+
+            // 10. startsWith()
+            System.out.println("startsWith(): " + str1.startsWith("Hello"));
+
+            // 11. endsWith()
+            System.out.println("endsWith(): " + str1.endsWith("Java"));
+
+            // 12. indexOf()
+            System.out.println("indexOf(): " + str1.indexOf("Java"));
+
+            // 13. lastIndexOf()
+            System.out.println("lastIndexOf(): " + str1.lastIndexOf("a"));
+
+            // 14. replace()
+            System.out.println("replace(): " + str1.replace("Java", "World"));
+
+            // 15. trim()
+            String str4 = "   Hello Java   ";
+            System.out.println("trim(): " + str4.trim());
+
+            // 16. isEmpty()
+            String str5 = "";
+            System.out.println("isEmpty(): " + str5.isEmpty());
+
+            // 17. compareTo()
+            System.out.println("compareTo(): " + str2.compareTo(str1));
+
+            // 18. split()
+            String fruits = "Apple,Banana,Mango";
+            String[] result1 = fruits.split(",");
+
+            System.out.println("split():");
+            for (String fruit : result1) {
+                System.out.println(fruit);
+            }
+        }
+
+        //Practical 10 (A): Create programs to evaluate differences between == and .equals in String, Integer, and BigDecimal?
+        {
+            // 1. String
+            String str1 = new String("Hello");
+            String str2 = new String("Hello");
+
+
+            System.out.println("str1 == str2       : " + (str1 == str2));
+            System.out.println("str1.equals(str2)  : " + str1.equals(str2));
+
+
+            // 2. Integer
+            Integer num1 = 100;
+            Integer num2 = 100;
+
+
+            System.out.println("num1 == num2       : " + (num1 == num2));
+            System.out.println("num1.equals(num2)  : " + num1.equals(num2));
+
+
+            // 3. BigDecimal
+            BigDecimal value1 = new BigDecimal("10.0");
+            BigDecimal value2 = new BigDecimal("10.00");
+
+
+            System.out.println("value1 == value2      : " + (value1 == value2));
+            System.out.println("value1.equals(value2) : " + value1.equals(value2));
+            System.out.println("value1.compareTo(value2): " + value1.compareTo(value2));
+
+        }
 
     }
 }
-
-
